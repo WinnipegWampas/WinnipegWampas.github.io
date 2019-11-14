@@ -1,0 +1,193 @@
+﻿body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-style: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 55px;
+    
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 140px;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#nav {
+    height: 100vh;
+    background-color: black;
+    width: 250px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+    #nav li {
+        color: deepskyblue;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0px;
+        margin: 45px;
+        margin-right: 0px;
+        border: 4px solid black;
+    }
+
+    #nav a {
+        color: deepskyblue;
+        font-family: 'Times New Roman', Times, serif;
+        border: 0px solid black;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 15px;
+        transition: font-size 0.5s ease-in-out;
+    }
+
+        #nav a:hover {
+            color: white;
+            border: 4px solid aqua;
+            border-radius: 10px;
+            text-shadow: 0 0 5px aqua;
+            box-shadow: 0 0 20px aqua;
+            font-size: 19px;
+        }
+
+.glowing {
+    position: relative;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 90px;
+    background: white;
+    border: 4px solid white;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    transition: .5s;
+    overflow: hidden;
+}
+
+input {
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    transition: .5s;
+}
+
+    input:hover + span {
+        color: aqua;
+        border: 4px solid aqua;
+    }
+
+    input:checked + span {
+        color: aqua;
+        border: 4px solid aqua;
+        text-shadow: 0 0 5px aqua;
+        box-shadow: 0 0 20px aqua;
+    }
+
+.transition {
+    background: #65a6a7;
+    color: #efefef;
+    width: 40%;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: .05em;
+    border-radius: 10px;
+    transition: .4s background ease-out;
+}
+
+
+.focus-in-expand {
+	-moz-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    -o-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    -ms-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+
+@-moz-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-o-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
