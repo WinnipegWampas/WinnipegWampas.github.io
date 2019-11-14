@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Winnipeg Wampa</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheets\css-pages-style.css" />
+    <style>
+        body
+        {
+        overflow:hidden;
+        }
+        #image {
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+ 
+ 
+<body onload="start()">
+    <script type="text/javascript">
+        var list = ["images/deathrace.jpg", "images/aboveboard.jpg", "images/deathracepeople.jpg" ];
+        var index = 0;
+        var maxindex = 2;
+        function start() {
+            document.getElementById("image").src = list[index];
+            setInterval(loop, 5000);
+        }
+        /* When the page loads up, the deathrace image starts off, it then cycles through 3 images and then resets to the first one
+          
+        */
+        function loop() {
+            index += 1;  
+            if (index > maxindex) {
+                index = 0;
+            }
+            document.getElementById("image").style.opacity = 0;
+            setTimeout(setimage, 500);
+        }
+
+        function setimage() 
+        {
+            document.getElementById("image").style.opacity = 0;
+            document.getElementById("image").src = list[index];
+            document.getElementById("image").style.opacity = 1;
+        }
+    </script>
+    <h1 class="focus-in-expand">Winnipeg Wampas</h1>
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="flow.html">Favourite Wampa Lists</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="pics.html">Pictures</a></li>
+        </ul>
+    <img id="image" style="height:auto; width:calc(100% - 250px); margin:0px; padding:0px; float: left;" src="images/deathrace.JPG" />
+
+
+
+
+
+
+
+
+<img style="position:absolute; top:0px; left:0px; height:200px; width:300px;" class="focus-in-expand" src="images/Patch - BW-1.png"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
